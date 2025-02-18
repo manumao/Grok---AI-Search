@@ -1,4 +1,4 @@
-# Grok---AI-Search
+# Grok - AI-Search
 Upgrade your default search engine. Set Grok as your default search engine in Chrome.
 Set Grok as your default search engine in Chrome. 
 
