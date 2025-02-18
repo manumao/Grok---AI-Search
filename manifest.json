@@ -1,0 +1,47 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Grok - AI Search",
+  "version": "1.0.0",
+  "description": "Search with Grok AI",
+  "action": {
+    "default_icon": {
+      "48": "companion-48.png",
+      "128": "companion-128.png"
+    }
+  },
+  "permissions": [
+    "search"
+  ],
+  "host_permissions": [
+    "https://x.com/*"
+  ],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "https://x.com/i/grok",
+    "search_provider": {
+      "name": "Grok AI",
+      "keyword": "grok",
+      "is_default": true,
+      "encoding": "UTF-8",
+      "favicon_url": "https://x.com/favicon.ico",
+      "search_url": "https://x.com/i/grok?text={searchTerms}",
+      "alternate_urls": [
+        "https://x.com/i/grok?text={searchTerms}"
+      ],
+      "prepopulated_id": 2,
+      "search_url_post_params": "",
+      "suggest_url_post_params": ""
+    },
+    "startup_pages": [
+      "https://x.com/i/grok"
+    ]
+  },
+  "icons": {
+    "48": "companion-48.png",
+    "128": "companion-128.png"
+  }
+}
